@@ -5032,59 +5032,7 @@ Tula Ram Kathariya
 <li class='clearfix'>
 <strong class='list-title'>Age</strong>
 <span class='cont'>
-    <script>
-        function calculateDateDifference(year, month, day) {
-  // Get the current date
-  const currentDate = new Date();
-
-  // Create a Date object for the provided date
-  const providedDate = new Date(year, month - 1, day);
-
-  // Calculate the difference in milliseconds
-  const differenceInMilliseconds = currentDate - providedDate;
-
-  // Calculate years, months, and days
-  const years = Math.floor(differenceInMilliseconds / (365.25 * 24 * 60 * 60 * 1000));
-  const months = Math.floor((differenceInMilliseconds % (365.25 * 24 * 60 * 60 * 1000)) / (30.44 * 24 * 60 * 60 * 1000));
-  const days = Math.floor((differenceInMilliseconds % (30.44 * 24 * 60 * 60 * 1000)) / (24 * 60 * 60 * 1000));
-
-  return {
-    years,
-    months,
-    days
-  };
-}
-
-function displayAge(ageObject) {
-  const { years, months, days } = ageObject;
-
-  let ageString = '';
-
-  if (years > 0) {
-    ageString += `${years} ${years === 1 ? 'year' : 'years'}`;
-  }
-
-  if (months > 0) {
-    ageString += ` ${months} ${months === 1 ? 'month' : 'months'}`;
-  }
-
-  if (days > 0) {
-    ageString += ` ${days} ${days === 1 ? 'day' : 'days'}`;
-  }
-
-  return ageString.trim();
-}
-
-// Example usage:
-const birthYear = 1997; // Replace this with the actual birth year
-const birthMonth = 12;   // Replace this with the actual birth month
-const birthDay = 19;    // Replace this with the actual birth day
-
-const dateDifference = calculateDateDifference(birthYear, birthMonth, birthDay);
-const ageString = displayAge(dateDifference);
-
-console.log(`${ageString}`);
-    </script>
+    26
 </span>
 </li>
 <li class='clearfix'>
